@@ -1,0 +1,24 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+.env
+
+# Raw data (large, don't commit)
+data/raw/*.csv
+!data/raw/.gitkeep
+
+# dbt
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+profiles.yml
+
+# Airflow
+airflow/logs/
+airflow/plugins/__pycache__/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
