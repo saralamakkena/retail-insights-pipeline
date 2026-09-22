@@ -1,19 +1,3 @@
-"""
-Day 2: Load raw Olist CSVs into the `raw` schema in Postgres.
-
-Usage:
-    python ingestion/load_raw.py
-
-Reads every *.csv file in data/raw/ and loads it into a same-named table
-in the `raw` schema, e.g.:
-    olist_orders_dataset.csv       -> raw.orders
-    olist_order_items_dataset.csv  -> raw.order_items
-    olist_customers_dataset.csv    -> raw.customers
-
-Run this after downloading the Olist dataset from Kaggle and placing the
-CSVs in data/raw/. Requires a running Postgres (docker compose up -d) and
-a .env file (copy .env.example -> .env).
-"""
 import os
 import sys
 from pathlib import Path

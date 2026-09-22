@@ -12,7 +12,10 @@ data/raw/*.csv
 dbt/target/
 dbt/dbt_packages/
 dbt/logs/
+dbt/.user.yml
 profiles.yml
+# dbt/profiles.yml is checked in: no secrets, env_var()-only like docker-compose.yml
+!dbt/profiles.yml
 
 # Airflow
 airflow/logs/

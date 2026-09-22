@@ -58,3 +58,5 @@ retail-insights-pipeline/
 | Date | What shipped |
 | --- | --- |
 | 2026-09-18 | Day 1: project scaffold, Docker Compose (Postgres), README |
+| 2026-09-21 | Day 2: raw CSV ingestion (`ingestion/load_raw.py`) into `raw` schema |
+| 2026-09-21 | Day 3: dbt project + staging views over all 9 raw tables |
