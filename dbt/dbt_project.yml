@@ -1,8 +1,8 @@
-name: 'retail_insights'
-version: '1.0.0'
+name: "retail_insights"
+version: "1.0.0"
 config-version: 2
 
-profile: 'retail_insights'
+profile: "retail_insights"
 
 model-paths: ["models"]
 analysis-paths: ["analyses"]
@@ -19,4 +19,3 @@ models:
   retail_insights:
     staging:
       +materialized: view
-      +schema: staging
