@@ -19,3 +19,6 @@ models:
   retail_insights:
     staging:
       +materialized: view
+    marts:
+      +materialized: table
+      +schema: analytics
