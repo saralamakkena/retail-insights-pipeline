@@ -14,3 +14,27 @@ models:
         tests:
           - not_null
           - unique
+
+  - name: fact_orders
+    description: >
+      One row per order item. Order-level measures (like total_payment_value)
+      repeat across every item row of the same order.
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+      - name: order_item_id
+        tests:
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_customers')
+              field: customer_id
+      - name: product_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_products')
+              field: product_id
